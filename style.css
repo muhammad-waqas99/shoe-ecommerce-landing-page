@@ -12,9 +12,17 @@
   font-style: normal;
 }
 
+.space-grotesk{
+  font-family: "Space Grotesk", sans-serif;
 
+}
+
+.grey{
+    color: #a19d9c;
+}
 body{
     background-color: #e7e7e3 !important;
+
 
 
 }
@@ -585,9 +593,111 @@ text-align: center;
 
 
 
-.bottomCards .card.fullCard{ max-width: 500px; max-height: 700px;}
-.bottomCards .card.fullCard img{ max-width: 500px; max-height: 700px;}
 
+footer>div{
+    background-color: #1f170e;
 
-.bottomCards .card{ max-width: 100%; max-height: 350px;}
-.bottomCards .card img{ max-width: 100%; max-height: 350px;}
+    gap: 18px;
+    flex-direction: column;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}
+footer .footerLinks .input>div{
+    padding: 16px;
+    width: 100%;
+    display: flex;
+
+gap: 4px;}
+footer .footerLinks .input {
+    display: flex;
+    background-color: #342717;
+    border-radius: 16px;
+    padding: 2px;
+    width: 100%;
+    max-width: 520px;
+    justify-content: space-between;
+}
+footer .footerLinks .input svg{
+width: 28px;
+color: grey !important;
+height: 28px;
+ 
+ 
+}
+footer .footerLinks .input button{
+    border-radius: 16px;
+    padding-inline: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #ded1c1;
+    color: #1c120b;
+    border: none;
+}
+.footerLinks .input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    color: white;
+}
+.socialLinks div{
+    background-color: #312817;
+    padding: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .footerLinks>div{
+    width: 100%;
+  }
+  .footerLinks h2{
+    text-align: center;
+    font-size: 16px !important;
+  }
+    .footerLinks li{
+        text-align: center;
+    }
+    footer {
+        margin: 12px !important;
+    }
+
+    footer > div {
+        padding: 30px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    footer .footerLinks .input {
+        max-width: 100%;
+    }
+
+    footer .footerLinks .input > div {
+        padding: 12px;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+    }
+    footer .bottomStrip div.grey{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+  footer .bottomStrip {
+    width: 100%;
+ justify-content: center;    
+ gap: 12px;
+ align-items: center;
+    flex-direction: column !important;
+  }
+  .socialLinks{
+    margin: 0 !important;
+  }
+    footer .footerLinks .input button {
+        padding-inline: 12px;
+        font-size: 14px;
+    }
+}
