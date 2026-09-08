@@ -15,6 +15,11 @@
 body{
     background-color: #e7e7e3 !important;
 
+
+}
+
+.crop{
+    object-fit: cover;
 }
 .svg-cart{
     width: 32px;
@@ -29,4 +34,79 @@ body{
 }
 .bg-blue{
     background-color: #4A69E2 !important;
+}
+.carousel img{
+    height: 750px;
+}
+
+.carousel-control-next.custom {
+    top: 85% !important;
+    right: 5% !important;
+    bottom: auto !important; 
+    opacity: 1 !important;    
+    width: auto !important;   
+}
+
+.carousel-control-prev.custom {
+    top: 85% !important;
+    left: 88% !important;
+    bottom: auto !important; 
+    opacity: 1 !important;    
+    width: auto !important;   
+}
+
+
+.custom .carousel-control-next-icon  , .custom .carousel-control-prev-icon{
+    background-color: #000000 !important;
+    background-size: 55% 55% !important; 
+    padding: 24px !important;            
+    border-radius: 50% !important;       
+}
+
+.heroRounded{
+    border-radius: 64px !important;
+}
+.bannerText {
+
+  
+    text-align: start !important;
+    bottom: 18px !important;
+    left: 5% !important;
+    right: 0 !important;
+}
+.bannerText h1{
+  color: white;
+   font-family: "Space Grotesk", sans-serif;
+   font-size: 64px;
+   font-weight: 700;
+}
+
+.bannerText p{
+    font-size: 24px;
+    color: #E7E7E3;
+
+}
+.bannerText button {
+    width: 130px;
+ height: 50px;
+ padding: 8px 16px;
+ font-size: 14px;
+ color: #fff;
+ font-weight: 500;
+}
+
+.bannerImg{
+        right: 90% !important;
+    bottom: 20% !important;
+    left: 89% !important; 
+
+}
+.bannerImg img{
+    
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+    border-radius: 16px;
+    border: 2px solid #e7e7e3;
+
 }
