@@ -283,6 +283,7 @@ text-align: center;
 
 .newCollection .imgWrapper{
     width: 300px;
+    border: 4px solid white;
   
     height: 300px;
     background-color: #eceef0;
@@ -362,6 +363,64 @@ text-align: center;
 }
 
 
+.bodyBanner{
+    max-width: 96rem;
+    position: relative;
+    margin: 50px auto;
+      max-height: 400px;
+      padding: 20px;
+    
+}
+.bodyBanner div{
+    position: absolute;
+      top: 50%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+}
+.bodyBanner h1{
+    color: white;
+           font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+text-align: center;
+max-width: 80%;
+  text-shadow: 1px 1px 1px #000;
+margin: 0 auto;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+
+}
+
+.bodyBanner button{
+  
+ 
+    height:30px;
+    padding: 4px 17px;
+    font-size: 12px !important;
+                background-color: #c0b4a6;
+    color:#2c2019;
+    font-weight: 700;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    
+   
+
+}
+.bodyBanner button:hover{
+    transform: scale(1.1);
+}
+.bodyBanner img{
+    width: 100%;
+      border-radius: 24px;
+      background-position: center;
+    max-height:400px;
+    object-fit: cover;
+}
+
 @media (min-width: 769px) {
     .mainCard .card{
         box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
@@ -435,4 +494,26 @@ text-align: center;
     font-size: 24px;
     width: 100%;
 }
+
+.bodyBanner div{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+.bodyBanner h1{
+  
+           
+   
+
+
+    font-size: 40px;
+
+}
+.bodyBanner button{
+  font-size: 16px !important;
+  border-radius: 16px !important;
+ 
+    height: 44px;
+    padding: 8px 34px;}
 }
