@@ -374,7 +374,7 @@ text-align: center;
 }
 .bodyBanner div{
     position: absolute;
-      top: 50%;
+      top: 30%;
     left: 0px;
     text-align: center;
     width: 100%;
@@ -460,6 +460,20 @@ margin: 0 auto;
  
 }
 
+
+.moreBtn {
+    color: #63513a;
+    background-color: #e8e0d7;
+    padding: 14px 24px;
+    border-radius: 16px;
+font-weight: 700;
+
+
+    font-size: 16px;
+     border: 2px solid #cbbcb1;
+text-align: center;
+
+}
 @media (min-width: 992px) {
     .category {
         justify-content: center; 
@@ -561,3 +575,19 @@ text-align: center;
     height: 44px;
     padding: 8px 34px;}
 }
+
+
+
+
+
+
+
+
+
+
+.bottomCards .card.fullCard{ max-width: 500px; max-height: 700px;}
+.bottomCards .card.fullCard img{ max-width: 500px; max-height: 700px;}
+
+
+.bottomCards .card{ max-width: 100%; max-height: 350px;}
+.bottomCards .card img{ max-width: 100%; max-height: 350px;}
