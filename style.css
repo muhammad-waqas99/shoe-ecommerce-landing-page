@@ -1,0 +1,32 @@
+
+.audiowide {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600 !important;
+  font-style: normal;
+}
+
+body{
+    background-color: #e7e7e3 !important;
+
+}
+.svg-cart{
+    width: 32px;
+    height: 32px;
+}
+
+.bg-cream{
+    background-color: #fafafa !important;
+}
+.radius-16 {
+  border-radius: 16px;
+}
+.bg-blue{
+    background-color: #4A69E2 !important;
+}
