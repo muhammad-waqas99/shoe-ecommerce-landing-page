@@ -19,7 +19,8 @@ body{
 }
 
 .crop{
-    object-fit: cover;
+       object-fit: cover;       
+    object-position: center; 
 }
 .svg-cart{
     width: 32px;
@@ -35,78 +36,268 @@ body{
 .bg-blue{
     background-color: #4A69E2 !important;
 }
-.carousel img{
-    height: 750px;
+.carousel .crop {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.carousel-control-next.custom {
-    top: 85% !important;
+.heroRounded {
+    border-radius: 24px !important; 
+}
+
+
+.bannerText {
+    text-align: start !important;
+    bottom: 20px !important;
+    left: 5% !important;
     right: 5% !important;
-    bottom: auto !important; 
+    padding-bottom: 0 !important;
+}
+
+.bannerText h1 {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px; 
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.bannerText p {
+    font-size: 14px; 
+    color: #E7E7E3;
+    margin-bottom: 15px;
+}
+
+.bannerText button {
+    width: 120px;
+    height: 44px;
+    padding: 6px 12px;
+    font-size: 12px !important;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.carousel-control-prev.custom,
+.carousel-control-next.custom {
+    bottom: 20px !important; 
+    top: auto !important; 
     opacity: 1 !important;    
     width: auto !important;   
 }
+
 
 .carousel-control-prev.custom {
-    top: 85% !important;
-    left: 88% !important;
-    bottom: auto !important; 
-    opacity: 1 !important;    
-    width: auto !important;   
+    left: auto !important;
+    right: 70px !important;
+}
+.carousel-control-next.custom {
+    right: 20px !important;
 }
 
 
-.custom .carousel-control-next-icon  , .custom .carousel-control-prev-icon{
+.custom .carousel-control-next-icon, 
+.custom .carousel-control-prev-icon {
     background-color: #000000 !important;
-    background-size: 55% 55% !important; 
-    padding: 24px !important;            
+    background-size: 50% 50% !important; 
+    padding: 18px !important; /* Mobile friendly touch target size */           
     border-radius: 50% !important;       
 }
 
-.heroRounded{
-    border-radius: 64px !important;
-}
-.bannerText {
 
-  
-    text-align: start !important;
-    bottom: 18px !important;
-    left: 5% !important;
-    right: 0 !important;
-}
-.bannerText h1{
-  color: white;
-   font-family: "Space Grotesk", sans-serif;
-   font-size: 64px;
-   font-weight: 700;
-}
 
-.bannerText p{
-    font-size: 24px;
-    color: #E7E7E3;
+@media (min-width: 769px) {
+    .carousel .crop {
+        height: 750px;
+    }
 
-}
-.bannerText button {
-    width: 130px;
- height: 50px;
- padding: 8px 16px;
- font-size: 14px;
- color: #fff;
- font-weight: 500;
-}
+    .heroRounded {
+        border-radius: 64px !important;
+    }
 
-.bannerImg{
-        right: 90% !important;
-    bottom: 20% !important;
-    left: 89% !important; 
+    .bannerText {
+        bottom: 40px !important;
+    }
 
-}
-.bannerImg img{
+    .bannerText h1 {
+        font-size: 64px; 
+        margin-bottom: 15px;
+    }
+
+    .bannerText p {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .bannerText button {
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+
+    .carousel-control-prev.custom {
+        left: auto !important;
+        right: 120px !important;
+        bottom: 40px !important;
+    }
     
-    width: 160px;
-    height: 160px;
-    margin-top: 20px;
-    border-radius: 16px;
-    border: 2px solid #e7e7e3;
+    .carousel-control-next.custom {
+        right: 60px !important;
+        bottom: 40px !important;
+    }
 
+    .custom .carousel-control-next-icon, 
+    .custom .carousel-control-prev-icon {
+        padding: 24px !important; 
+    }
+
+
+    .bannerImg {
+        right: 5% !important;
+        bottom: auto !important;
+        top: 10% !important;
+        left: auto !important;
+
+    }
+
+    .bannerImg img {
+        width: 160px;
+        height: 160px;
+        border-radius: 16px;
+        border: 2px solid #e7e7e3;
+        object-fit: cover;
+    }
+}
+
+.mainCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.mainCard .card{
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    width:300px !important;
+    position: relative;
+    height: 350px !important ;
+    border-radius:16px;
+    border: none;
+}
+
+.mainCard img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainCard h2{
+    position: absolute;
+    bottom: 70px;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Space Grotesk", sans-serif;
+    margin-inline: 30px;
+}
+
+.mainCard button{
+    position: absolute;
+    bottom: 20px;
+    margin-inline: 30px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4A69E2;
+    color: #fff;
+    font-size: 10Px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mainCard .card:last-child h2{
+    top: 60%;
+    right: 20%;
+    left: auto;
+}
+
+.mainCard .card:last-child button{
+    top: 68%;
+    right: 25%;
+    width: auto;
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+    font-weight:900;
+    height: 30px;
+}
+
+@media (min-width: 769px) {
+    .mainCard .card{
+        box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+        width:450px !important;
+        position: relative;
+        height: 600px !important ;
+        border-radius:16px;
+        border: none;
+    }
+
+    .mainCard img{
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mainCard h2{
+        position: absolute;
+        bottom: 70px;
+        text-shadow: 1px 1px 1px #000;
+        color: #fff;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-family: "Space Grotesk", sans-serif;
+        margin-inline: 30px;
+        font-size: 32px;
+    }
+
+    .mainCard button{
+        position: absolute;
+        bottom: 20px;
+        margin-inline: 30px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: none;
+        background-color: #4A69E2;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "DM Sans", sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .mainCard .card:last-child h2{
+        top: 60%;
+        right: 20%;
+        left: auto;
+    }
+
+    .mainCard .card:last-child button{
+        top: 68%;
+        right: 28%;
+        width: auto;
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+        font-weight:900;
+        height: 50px;
+    }
 }
