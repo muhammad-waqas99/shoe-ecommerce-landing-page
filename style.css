@@ -52,6 +52,13 @@ body {
     color: white;
 }
 
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 
 .carousel .crop {
     height: 350px;
