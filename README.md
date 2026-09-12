@@ -1,5 +1,11 @@
 # Sole — Shoe E-Commerce Landing Page
 
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://sole-shoe.netlify.app/)
+
+</div>
+
 A modern and responsive shoe e-commerce landing page built with **Bootstrap, HTML, CSS, and JavaScript**, featuring a premium-inspired design and responsive layouts.
 
 > **SMIT Assignment:** This project was developed as part of an assignment at **Saylani Mass IT Training (SMIT)** to practice using Bootstrap components and utilities while building a responsive e-commerce landing page.
